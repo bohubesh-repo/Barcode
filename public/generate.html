@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generate Barcode</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Generate Barcode</h1>
+    <a href="/" class="link">← Home</a>
+
+    <section class="card">
+      <h2>Create Product</h2>
+      <form id="productForm">
+        <div class="grid">
+          <input name="category" placeholder="Category" required />
+          <input name="subcategory" placeholder="Subcategory" required />
+          <input name="model" placeholder="Model" required />
+          <input name="color" placeholder="Color" required />
+          <input name="size" placeholder="Size" required />
+        </div>
+        <button class="btn primary" type="submit">Create Product</button>
+      </form>
+      <p id="productMsg"></p>
+    </section>
+
+    <section class="card">
+      <h2>Create Batch</h2>
+      <form id="batchForm">
+        <div class="grid">
+          <select name="sku" id="skuSelect" required>
+            <option value="">Select SKU</option>
+          </select>
+          <input name="production_date" placeholder="Production Date (e.g. 2503)" required />
+          <input name="manufacturer_code" placeholder="Manufacturer Code" required />
+          <input name="batch_number" placeholder="Batch Number" required />
+          <input type="number" name="quantity" min="1" placeholder="Quantity" required />
+        </div>
+        <button class="btn primary" type="submit">Create Batch + Units</button>
+      </form>
+      <p id="batchMsg"></p>
+      <div id="batchActions"></div>
+    </section>
+
+    <section class="card">
+      <h2>Preview Unit</h2>
+      <input id="barcodeLookup" placeholder="Enter full barcode" />
+      <button id="lookupBtn" class="btn secondary">Lookup</button>
+      <div id="lookupResult"></div>
+    </section>
+  </main>
+
+  <script src="/js/generate.js"></script>
+</body>
+</html>
