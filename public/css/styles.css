@@ -1,0 +1,80 @@
+:root {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fa;
+  color: #222;
+}
+
+.home,
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.actions {
+  display: grid;
+  gap: 1rem;
+  max-width: 320px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.primary {
+  background: #1f6feb;
+  color: #fff;
+}
+
+.secondary {
+  background: #24292f;
+  color: #fff;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+input,
+select {
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 1px solid #c6c9cc;
+}
+
+.link {
+  text-decoration: none;
+  color: #1f6feb;
+}
+
+#reader video {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 0.8rem;
+}
+
+.small {
+  font-size: 0.88rem;
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scan Barcode</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Scan Barcode</h1>
+    <a href="/" class="link">← Home</a>
+
+    <section class="card">
+      <button id="startScan" class="btn primary">Activate Camera</button>
+      <div id="reader"></div>
+      <p id="scanMsg"></p>
+      <div id="scanResult"></div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/@zxing/library@0.21.3"></script>
+  <script src="/js/scan.js"></script>
+</body>
+</html>
